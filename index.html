@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<title>Mu-Z-Art</title>
+
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css" integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9" crossorigin="anonymous">
+
+	<!-- p5 library -->
+	<script src="libraries/p5.js"></script>
+	<script src="libraries/p5.dom.js"></script>
+	<script src="libraries/p5.sound.js"></script>
+
+</head>
+
+
+
+<body>
+
+	<div id="logo-wrapper-div">
+		<h1> mu-z-art </h1>
+
+		<div class="buttons-wrap-div" align="center">
+			<i class="far fa-play-circle fa-2x" id="play-button"></i>
+			<i class="far fa-plus-square fa-2x" id="new-button"></i>
+			<i class="far fa-save fa-2x" id="save-button"></i>
+			<i class="far fa-eye fa-2x" id="show-list-button"></i>
+		</div>
+
+		<div id="saved-drawings-list-wrapper" align="center">
+			<form id="save-form">
+				<input type="text" id="drawing-title" placeholder="Title">
+				<input type="text" id="drawing-person-name" placeholder="Your Name">
+				<input type="submit" id="submit-button"></input>
+
+			</form>
+			<select id="drawing-select-list"></select>
+
+		</div>
+
+	</div>
+
+	<div id="canvas-wrap-div">
+		<div id="sketch-holder">
+	    <!-- Our sketch will go here! -->
+	  </div>
+	</div>
+
+
+
+	<script src="./Path.js"></script>
+	<script src="./Particle.js"></script>
+	<script src="./EventHelperFunctions.js"></script>
+	<script src="./Canvas.js"></script>
+	<script src="./Sound.js"></script>
+	<script src="./ExplodingParticle.js"></script>
+
+
+</body>
+</html>
