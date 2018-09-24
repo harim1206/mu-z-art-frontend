@@ -6,6 +6,7 @@ let painting = false
 // How long until next cycle -> next = millis() + random(100) -> random of 100 milli seconds
 let next = 0
 let counter = 0
+let x = ""
 
 // Current and previous mouse positions. They will be vector objects
 let current
